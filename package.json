@@ -17,7 +17,6 @@
     "front-end"
   ],
   "scripts": {
-    "preinstall": "del-cli vendor",
     "postinstall": "download --extract --strip 2 --out vendor https://github.com/twitter/twemoji/archive/v13.0.1.zip && del-cli \"vendor/**\" \"vendor/.*\" \"!vendor/72x72\" \"!vendor/svg\""
   },
   "dependencies": {

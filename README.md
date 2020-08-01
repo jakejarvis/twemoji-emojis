@@ -1,6 +1,10 @@
 # 📦 twemoji-assets
 
+[![npm](https://img.shields.io/npm/v/twemoji-assets)](https://www.npmjs.com/package/twemoji-assets)
+
 A _very_ simple NPM package that downloads [Twemoji](https://twemoji.twitter.com/) emojis (PNG and SVG) on installation. Version numbers align with [Twemoji releases](https://github.com/twitter/twemoji/releases).
+
+## Usage
 
 Graphics will be located relative to your project root in:
 
@@ -9,13 +13,7 @@ Graphics will be located relative to your project root in:
 
 Other assets such as the JS files still need to be added to your project separately via the [official `twemoji` package](https://www.npmjs.com/package/twemoji) if you require them.
 
-**Note:** This exists mainly for [my own convenience](https://github.com/jakejarvis/jarv.is), which is why it's not published on NPM yet — but feel free to either fork or install directly from GitHub (not recommended):
-
-```sh
-npm install jakejarvis/twemoji-assets#main
-# ...or:
-yarn add jakejarvis/twemoji-assets#main
-```
+**Note:** This exists mainly for [my own convenience](https://github.com/jakejarvis/jarv.is) and was thrown together in literally two minutes. Improvements welcome!
 
 ## License
 
