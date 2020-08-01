@@ -8,8 +8,8 @@ A _very_ simple NPM package that downloads [Twemoji](https://twemoji.twitter.com
 
 Graphics will be located relative to your project root in:
 
-- `node_modules/twemoji-assets/vendor/72x72` for 72px PNGs.
-- `node_modules/twemoji-assets/vendor/svg` for vector SVGs.
+- `node_modules/twemoji-emojis/vendor/72x72` for 72px PNGs.
+- `node_modules/twemoji-emojis/vendor/svg` for vector SVGs.
 
 Other assets such as the JS files still need to be added to your project separately via the [official `twemoji` package](https://www.npmjs.com/package/twemoji) if you require them.
 
