@@ -1,6 +1,6 @@
 {
   "name": "twemoji-emojis",
-  "version": "13.0.2",
+  "version": "13.1.0",
   "description": "A very simple downloader for Twemoji graphics (PNG and SVG)",
   "license": "CC-BY-4.0",
   "repository": "jakejarvis/twemoji-emojis",
@@ -17,7 +17,7 @@
     "front-end"
   ],
   "scripts": {
-    "postinstall": "download --extract --strip 2 --out vendor https://github.com/twitter/twemoji/archive/v13.0.2.zip && del-cli \"vendor/**\" \"vendor/.*\" \"!vendor/72x72\" \"!vendor/svg\""
+    "postinstall": "download --extract --strip 2 --out vendor https://github.com/twitter/twemoji/archive/v13.1.0.zip && del-cli \"vendor/**\" \"vendor/.*\" \"!vendor/72x72\" \"!vendor/svg\""
   },
   "dependencies": {
     "del-cli": "^3.x",
