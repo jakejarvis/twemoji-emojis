@@ -11,7 +11,8 @@ fetchLatestTwemoji()
 async function fetchLatestTwemoji() {
   // figure out the latest release on GitHub:
   // https://github.com/twitter/twemoji/releases/latest
-  const { data } = await new Octokit().repos.getLatestRelease({
+  const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN || null });
+  const { data } = await octokit.repos.getLatestRelease({
     owner: "twitter",
     repo: "twemoji",
   });
