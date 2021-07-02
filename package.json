@@ -1,6 +1,6 @@
 {
   "name": "twemoji-emojis",
-  "version": "13.1.0",
+  "version": "14.0.0",
   "description": "A very simple downloader for Twemoji graphics (PNG and SVG)",
   "license": "CC-BY-4.0",
   "repository": "jakejarvis/twemoji-emojis",
