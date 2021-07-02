@@ -2,7 +2,9 @@
 
 [![npm](https://img.shields.io/npm/v/twemoji-emojis)](https://www.npmjs.com/package/twemoji-emojis)
 
-A _very_ simple NPM package that downloads [Twemoji](https://twemoji.twitter.com/) emojis (PNG and SVG) on installation. Version numbers align with [Twemoji releases](https://github.com/twitter/twemoji/releases).
+A _very_ simple NPM package that downloads [Twemoji](https://twemoji.twitter.com/) emojis (PNG and SVG) on installation.
+
+~~Version numbers align with [Twemoji releases](https://github.com/twitter/twemoji/releases).~~ Starting with v14.0.0, this package always downloads the latest Twemojis available.
 
 ## Usage
 
