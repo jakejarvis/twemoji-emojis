@@ -17,10 +17,9 @@
     "front-end"
   ],
   "scripts": {
-    "postinstall": "download --extract --strip 2 --out vendor https://github.com/twitter/twemoji/archive/v13.1.0.zip && del-cli \"vendor/**\" \"vendor/.*\" \"!vendor/72x72\" \"!vendor/svg\""
+    "postinstall": "node ./postinstall.js"
   },
   "dependencies": {
-    "del-cli": "^3.x",
-    "download-cli": "^1.x"
+    "download": "^8.x"
   }
 }

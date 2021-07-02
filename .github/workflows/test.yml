@@ -1,0 +1,37 @@
+name: Run tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os:
+        - ubuntu-latest
+        - macos-latest
+        - windows-latest
+        node:
+        - 16
+        - 14
+        - 12
+        - 10
+      fail-fast: false
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
+    - uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install
+    - name: Are 🌈s imaginary??? (png)
+      run: |
+        test -f ./vendor/72x72/1f308.png
+    - name: Does true 💓 even exist?!?!??! (svg)
+      run: |
+        test -f ./vendor/svg/1f493.svg
