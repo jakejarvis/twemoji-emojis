@@ -20,7 +20,6 @@
     "postinstall": "node ./postinstall.js"
   },
   "dependencies": {
-    "@octokit/rest": "^18.6.6",
     "download": "^8.x"
   }
 }

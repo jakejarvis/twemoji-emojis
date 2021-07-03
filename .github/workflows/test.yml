@@ -29,11 +29,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Are 🌈s imaginary??? (png)
-      run: |
-        test -f ./vendor/72x72/1f308.png
+      run: test -f ./vendor/72x72/1f308.png
     - name: Does true 💓 even exist?!?!??! (svg)
-      run: |
-        test -f ./vendor/svg/1f493.svg
+      run: test -f ./vendor/svg/1f493.svg

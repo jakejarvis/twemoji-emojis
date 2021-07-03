@@ -1,6 +1,5 @@
 const path = require("path");
 const download = require("download");
-const { Octokit } = require("@octokit/rest");
 
 fetchLatestTwemoji()
   .catch((error) => {
@@ -9,16 +8,10 @@ fetchLatestTwemoji()
   });
 
 async function fetchLatestTwemoji() {
-  // figure out the latest release on GitHub:
-  // https://github.com/twitter/twemoji/releases/latest
-  const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN || null });
-  const { data } = await octokit.repos.getLatestRelease({
-    owner: "twitter",
-    repo: "twemoji",
-  });
+  // fetch latest assets from source:
+  // https://github.com/twitter/twemoji/tree/master
+  const sourceUrl = "https://github.com/twitter/twemoji/archive/refs/heads/master.zip";
 
-  // the .zip file from the GitHub API response
-  const sourceUrl = data.zipball_url;
   // save extracted graphics to ./vendor/{svg,72x72}/...
   const destPath = path.join(__dirname, "vendor");
 
